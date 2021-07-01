@@ -10,3 +10,6 @@
 [submodule "waiterbot-operator-desktopapp"]
 	path = waiterbot-operator-desktopapp
 	url = https://github.com/buddhiheshan/waiterbot-operator-desktopapp.git
+[submodule "waiterbot-hardware"]
+	path = waiterbot-hardware
+	url = https://github.com/buddhiheshan/waiterbot-hardware.git

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/6389eb7071.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css">
+    <link rel='stylesheet' href='css/styles.css'>
+
+    <title>WaiterBot System</title>
+</head>
+
+
+<body>
+
+
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand mr-auto" href="./index.html">WaiterBot System</a>
+            <div id="Navbar" class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span>
+                            Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./solution.html"><span
+                                class="fa fa-lightbulb-o fa-lg"></span> Solution Architecture</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span
+                                class="fa fa-pencil fa-lg"></span> Design and Progress</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./waiterbot.html"><span class="fa fa-robot fa-lg"></span>
+                                WaiterBot</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item active" href="#"><span class="fa fa-server fa-lg"></span> WaiterBot
+                                API</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./mobile_app.html"><span class="fa fa-mobile fa-lg"></span>
+                                Mobile Application</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./web_app.html"><span class="fa fa-desktop fa-lg"> </span>
+                                Web Application</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./desktop_app.html"><span class="fa fa-desktop fa-lg"></span>
+                                Desktop Application</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./demonstration.html"><span class="fa fa-play fa-lg"></span>
+                                Demonstrations</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./documentation.html"><span class="fa fa-file fa-lg"></span>
+                                Documentation</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"><span class="fa fa-vial fa-lg"></span> Testing
+                            and Deployment</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./software_testing.html"><span
+                                    class="fa fa-bug fa-lg"></span> Software Testing</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./hardware_testing.html"><span
+                                    class="fa fa-microchip fa-lg"></span> Hardware Testing</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./deployment.html"><span class="fa fa-cloud fa-lg"></span>
+                                Cloud Deployment</a>
+                        </div>
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"><span class="fa fa-plus fa-lg"></span> More</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./team.html"><span class="fa fa-users fa-lg"></span> Team</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./budget.html"><span class="fa fa-money fa-lg"></span>
+                                 Budget</a>
+                        </div>
+                    </li>
+                </ul>
+                <a href="https://github.com/cepdnaclk/e16-3yp-waiterbot-system" class="btn btn-warning btn-md"
+                    role="button" target="_blank"><span class="fa fa-github fa-lg"></span> Github Repo</a>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-sm-8">
+                    <h1>Design and Progress</h1>
+                    <p>WaiterBot API</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class='container'>
+        <div class='row row-content'>
+
+        </div>
+    </div>
+
+    <div id="designCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#designCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#designCarousel" data-slide-to="1"></li>
+            <li data-target="#designCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active  design-carousel">
+                <img src="./img//waiterbot_api/backend_overview.png" alt="...">
+                <div class="carousel-caption">
+                    <h5>Overall Design</h5>
+                </div>
+            </div>
+            <div class="carousel-item  design-carousel">
+                <img src="./img//waiterbot_api/er.png" alt="...">
+                <div class="carousel-caption">
+                    <h5>ER Diagram</h5>
+                </div>
+            </div>
+            <div class="carousel-item  design-carousel">
+                <img src="./img//waiterbot_api/api_diagram.png" alt="...">
+                <div class="carousel-caption">
+                    <h5>How API handles a request</h5>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#designCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#designCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div class='container'>
+        <!-- Features -->
+        <div class='row row-content'>
+            <div class="col">
+                <h3>Middlewares</h3>
+            </div>
+            <div class="col-12">
+                <p>Middlewares permits communication and management for the backend by operating as a hidden translation layer. By using express.js framework we can easily manage middlewares as we need. Types of middlewares we use in our backend design are listed below.</p>
+                <ol>
+                    <li>
+                        Application layer middlewares
+                        <p>
+                            <ul>
+                                <li>Authentication middleware</li>
+                                <li>Logging middleware</li>
+                            </ul>
+                        </p>
+                    </li>
+                    <li>
+                        Application layer middlewares
+                        <ul>
+                            <li>Check authentication middleware</li>
+                            <p>This middleware is responsible for Access control of the users.</p>
+                        </ul>
+                    </li>
+                    <li>
+                        Global error handling middleware
+                        <p></p>
+                    </li>
+                    <li>
+                        Third party middleware
+                        <p>
+                            <ul>
+                                <li>Cors middleware</li>
+                                <li>Body Parser middleware</li>
+                                <li>Mult middleware</li>
+                            </ul>
+                        </p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <div class='row row-content'>
+            <div class="col">
+                <h3>Design Decisions</h3>
+            </div>
+            <div class="col-12">
+                <p>Following aspects where considered when designing the API to increase the quality of the API.</p>
+                <ol>
+                    <li>
+                        Version controlling
+                        <p>Version control comes in handy when we need to have some changes in our API. Existing clients may not like to update their applications when we change the API. A versioning strategy allows clients to continue using the existing API and migrate their applications to the newer API when they are ready.</p>
+                    </li>
+                    <li>
+                        Input validation
+                        <p>Using the joi package validates the input first.</p>
+                    </li>
+                    <li>
+                        Server jurnal
+                        <p>Winston / log4js</p>
+                    </li>
+                    <li>
+                        Security
+                        <p></p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="technologyCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#technologyCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#technologyCarousel" data-slide-to="1" class="active"></li>
+            <li data-target="#technologyCarousel" data-slide-to="2" class="active"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active technology-carousel">
+                <div class="row justify-content-center m-5">
+                    <div class="col-5 align-self-center">
+                        <img src="./img//waiterbot_api/nodejs.png" alt="...">
+                    </div>
+                    <div class="col-5 align-self-center">
+                        <h3>NodeJS</h3>
+                        <p>Node js is an event-driven environment which has a single threaded event loop as well as async handlers. Because of it’s event loop and async handlers, it has less context switching compared to multi threaded servers.Since our backend has no heavy computations, we have selected Node.js as the WaiterBot system's backend technology.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item technology-carousel">
+                <div class="row justify-content-center m-5">
+                    <div class="col-5 align-self-center">
+                        <img src="./img//waiterbot_api/mongo.png" alt="...">
+                    </div>
+                    <div class="col-5 align-self-center">
+                        <h3>MongoDB</h3>
+                        <p>MongoDB is a flexible document based database which has great query performance. It has highly availability and scalability. By using MongoDB we can develop fast and can move fast.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item technology-carousel">
+                <div class="row justify-content-center m-5">
+                    <div class="col-5 align-self-center">
+                        <img src="./img//waiterbot_api/aws.png" alt="...">
+                    </div>
+                    <div class="col-5 align-self-center">
+                        <h3>AWS</h3>
+                        <p>To have better scalability and reliability we use AWS S3 storage as our main storage. All the static content will be stored in the S3 bucket and CDN will access the S3 bucket to deliver the content fast to the users.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#technologyCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#technologyCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- footer -->
+    <footer class='footer'>
+        <div class='container'>
+            <div class='row align-items-center'>
+                <div class='col-12 col-sm-4'>
+                    <h5>Links</h5>
+                    <ul class='list-unstyled'>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./solution.html">Solution Architecture</a></li>
+                        <li><a href="./waiterbot.html">WaiterBot</a></li>
+                        <li><a href="#">WaiterBot API</a></li>
+                        <li><a href="./mobile_app.html">Mobile Application</a></li>
+                        <li><a href="./web_app.html">Web Application</a></li>
+                        <li><a href="./desktop_app.html">Desktop Application</a></li>
+                        <li><a href="./demonstration.html">Demonstration</a></li>
+                        <li><a href="./documentation.html">Documentation</a></li>
+                        <li><a href="./software_testing.html">Software Testing</a></li>
+                        <li><a href="./hardware_testing.html">Hardware Testing</a></li>
+                        <li><a href="./deployment.html">Cloud Deployment</a></li>
+                        <li><a href="./team.html">Team</a></li>
+                    </ul>
+                </div>
+                <div class='col-12 col-sm-8 col-md-5'>
+                    <h5>Related Links</h5>
+                    <ul class='list-unstyled'>
+                        <li><a href="http://www.ce.pdn.ac.lk/" target="_blank">Department of Computer
+                                Engineering</a>
+                        </li>
+                        <li><a href="http://eng.pdn.ac.lk/" target="_blank">Faculty of Engineering</a></li>
+                        <li><a href="http://www.pdn.ac.lk/" target="_blank">Univerity of Peradeniya</a></li>
+                    </ul>
+                </div>
+                <div class='col-12 col-md-3'>
+                    <div class='text-center'>
+                        <a class="btn btn-social-icon btn-github btn-lg"
+                            href="https://github.com/cepdnaclk/e16-3yp-waiterbot-system" target="_blank"><i
+                                class="fa fa-github fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class='row justify-content-center'>
+                <div class='col-auto'>
+                    <p>© Copyright 2020 WaiterBot System</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

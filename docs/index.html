@@ -7,35 +7,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-     <!-- Bootstrap CSS -->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-     <script src="https://kit.fontawesome.com/6389eb7071.js" crossorigin="anonymous"></script>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css">
-     <link rel='stylesheet' href='css/styles.css'>
-    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/6389eb7071.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css">
+    <link rel='stylesheet' href='css/styles.css'>
+
     <title>WaiterBot System</title>
 </head>
 
+
 <body>
+
+
     <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" height="30" width="41"></a>
+            <a class="navbar-brand mr-auto" href="#">WaiterBot System</a>
             <div id="Navbar" class="collapse navbar-collapse">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./solution.html"><span class="fa fa-lightbulb-o fa-lg"></span> Solution Architecture</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./design.html"><span class="fa fa-pencil fa-lg"></span> Design and Progress</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./testingAndDeployment.html"><span class="fa fa-vial fa-lg"></span> Testing and Deployment</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./team.html"><span class="fa fa-user fa-lg"></span> Team</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./future.html"><span class="fa fa-money fa-lg"></span> Budget & Future Developments</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span>
+                            Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./solution.html"><span
+                                class="fa fa-lightbulb-o fa-lg"></span> Solution Architecture</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"><span class="fa fa-pencil fa-lg"></span> Design
+                            and Progress</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./waiterbot.html"><span class="fa fa-robot fa-lg"></span>
+                                WaiterBot</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./waiterbot_api.html"><span
+                                    class="fa fa-server fa-lg"></span> WaiterBot API</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./mobile_app.html"><span class="fa fa-mobile fa-lg"></span>
+                                Mobile Application</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./web_app.html"><span class="fa fa-desktop fa-lg"> </span>
+                                Web Application</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./desktop_app.html"><span class="fa fa-desktop fa-lg"></span>
+                                Desktop Application</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./demonstration.html"><span class="fa fa-play fa-lg"></span>
+                                Demonstrations</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./documentation.html"><span class="fa fa-file fa-lg"></span>
+                                Documentation</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"><span class="fa fa-vial fa-lg"></span> Testing
+                            and Deployment</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./software_testing.html"><span
+                                    class="fa fa-bug fa-lg"></span> Software Testing</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./hardware_testing.html"><span
+                                    class="fa fa-microchip fa-lg"></span> Hardware Testing</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./deployment.html"><span class="fa fa-cloud fa-lg"></span>
+                                Cloud Deployment</a>
+                        </div>
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"><span class="fa fa-plus fa-lg"></span> More</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./team.html"><span class="fa fa-users fa-lg"></span> Team</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./budget.html"><span class="fa fa-money fa-lg"></span>
+                                 Budget</a>
+                        </div>
+                    </li>
                 </ul>
+                <a href="https://github.com/cepdnaclk/e16-3yp-waiterbot-system" class="btn btn-warning btn-md"
+                    role="button" target="_blank"><span class="fa fa-github fa-lg"></span> Github Repo</a>
             </div>
-            
+
         </div>
     </nav>
+
 
     <header class="jumbotron">
         <div class="container">
@@ -44,9 +102,6 @@
                     <h1>WaiterBot System</h1>
                     <p>Dine with Technology!</p>
                 </div>
-                <div class="col-12 col-sm align-self-center">
-                    <a href="https://github.com/cepdnaclk/e16-3yp-waiterbot-system" class="btn btn-warning btn-lg btn-block" role="button" target="_blank">Go to Github Repo</a>
-                </div>
             </div>
         </div>
     </header>
@@ -54,20 +109,39 @@
     <div class='container'>
         <div class="row row-content align-items-center">
             <div class="col-12 col-md-9">
-                <p>Robots have seen a wide array and continuous applications in various industries since their inception. The efficiency and versatility that robots possess can be molded into a vast area of services, and robots in restaurants can step up to be a huge breakthrough in terms of customer and owner satisfaction and improving the overall experience in diners.</p>
-                <p>The WaiterBot System is an automated system designed for placing and delivering orders in a restaurant. This system will replace the human waiters with robot waiters for an efficient delivery process and also give customers a new experience. Customers can place orders via the mobile application and once the orders are ready, the WaiterBots will deliver the orders to the customer.</p>
+                <p>Robots have seen a wide array and continuous applications in various industries since their
+                    inception. The efficiency and versatility that robots possess can be molded into a vast area of
+                    services, and robots in restaurants can step up to be a huge breakthrough in terms of customer and
+                    owner satisfaction and improving the overall experience in diners.</p>
+                <p>The WaiterBot System is an automated system designed for placing and delivering orders in a
+                    restaurant. This system will replace the human waiters with robot waiters for an efficient delivery
+                    process and also give customers a new experience. Customers can place orders via the mobile
+                    application and once the orders are ready, the WaiterBots will deliver the orders to the customer.
+                </p>
             </div>
-            <div class="col-12 col-sm-3"><img src="./img/intro.png" class="img-fluid"></div>
+            <div class="col-12 col-sm-3"><img src="./img/home/intro.png" class="img-fluid"></div>
         </div>
 
         <div class="row row-content align-items-center">
             <div class="col-12 row-header">
                 <h3>Current Practice and the Problems</h3>
             </div>
-            <div class="col-12 col-sm-3"><img src="./img/problem.png" class="img-fluid"></div>
+            <div class="col-12 col-sm-3"><img src="./img/home/problem.png" class="img-fluid"></div>
             <div class="col-12 col-md-9">
-                <p>Currently in restaurants food is delivered by human waiters. Even the order placing is done through a waiter. You may have encountered situations where the waiter takes a long time to take the order and deliver it. The customers may also keep complaining that the service is not satisfactory. There may also be instances where the waiters might mess up the orders or not deliver the order to the correct customer. Due to these situations the reputation of your restaurant might be tarnished, and worse, if a customer faces these problems he/she will not visit your restaurant again because the service is not satisfactory and hence you will lose customers.</p>
-                <p>Usually a customer placing the order will have to select the food items using a traditional menu card and might have questions when selecting food items like whether the selected item is good enough in terms of taste, quality, etc... Also, once the orders are placed, if the ordered item is not available due to various reasons, the waiter will have to inform the customer and the customer will have to order some other item, resulting in irritation of the customer in some cases as well. This order placing and delivery process may not be much efficient especially if the restaurant is busy with customers.
+                <p>Currently in restaurants food is delivered by human waiters. Even the order placing is done through a
+                    waiter. You may have encountered situations where the waiter takes a long time to take the order and
+                    deliver it. The customers may also keep complaining that the service is not satisfactory. There may
+                    also be instances where the waiters might mess up the orders or not deliver the order to the correct
+                    customer. Due to these situations the reputation of your restaurant might be tarnished, and worse,
+                    if a customer faces these problems he/she will not visit your restaurant again because the service
+                    is not satisfactory and hence you will lose customers.</p>
+                <p>Usually a customer placing the order will have to select the food items using a traditional menu card
+                    and might have questions when selecting food items like whether the selected item is good enough in
+                    terms of taste, quality, etc... Also, once the orders are placed, if the ordered item is not
+                    available due to various reasons, the waiter will have to inform the customer and the customer will
+                    have to order some other item, resulting in irritation of the customer in some cases as well. This
+                    order placing and delivery process may not be much efficient especially if the restaurant is busy
+                    with customers.
                 </p>
             </div>
         </div>
@@ -77,55 +151,75 @@
                 <h3>Our Solution</h3>
             </div>
             <div class="col-12 col-md-9">
-                <p>Our solution is to replace the human waiter with a robot waiter and also to replace the traditional menu cards system with a more attractive and efficient order placing system. On an event where a customer visits the restaurant he/she can place the order via the order placing system and once the ordered items are ready, the items will be delivered to the customer. Our solution will help the customer to select the food items more efficiently with help of the reviews from previous customers and also if an item is unavailable that item will not be shown in the menu. The WaiterBot system will help the restaurant by providing an efficient delivery mechanism. WaiterBots will not mess up orders and they will deliver the food items to the correct table. Also this may be a new experience for the customers and the WaiterBot system will attract more customers to the restaurant.</p>
+                <p>Our solution is to replace the human waiter with a robot waiter and also to replace the traditional
+                    menu cards system with a more attractive and efficient order placing system. On an event where a
+                    customer visits the restaurant he/she can place the order via the order placing system and once the
+                    ordered items are ready, the items will be delivered to the customer. Our solution will help the
+                    customer to select the food items more efficiently with help of the reviews from previous customers
+                    and also if an item is unavailable that item will not be shown in the menu. The WaiterBot system
+                    will help the restaurant by providing an efficient delivery mechanism. WaiterBots will not mess up
+                    orders and they will deliver the food items to the correct table. Also this may be a new experience
+                    for the customers and the WaiterBot system will attract more customers to the restaurant.</p>
             </div>
-            <div class="col-12 col-sm-3"><img src="./img/solution.png" class="img-fluid"></div>
+            <div class="col-12 col-sm-3"><img src="./img/home/solution.png" class="img-fluid"></div>
         </div>
-        
+
     </div>
 
 
     <!-- footer -->
     <footer class='footer'>
         <div class='container'>
-            <div class='row align-items-center'>             
+            <div class='row align-items-center'>
                 <div class='col-12 col-sm-4'>
                     <h5>Links</h5>
                     <ul class='list-unstyled'>
                         <li><a href="#">Home</a></li>
                         <li><a href="./solution.html">Solution Architecture</a></li>
-                        <li><a href="./design.html">Design and Progress</a></li>
-                        <li><a href="./testingAndDeployment.html">Testing and Deployment</a></li>
+                        <li><a href="./waiterbot.html">WaiterBot</a></li>
+                        <li><a href="./waiterbot_api.html">WaiterBot API</a></li>
+                        <li><a href="./mobile_app.html">Mobile Application</a></li>
+                        <li><a href="./web_app.html">Web Application</a></li>
+                        <li><a href="./desktop_app.html">Desktop Application</a></li>
+                        <li><a href="./demonstration.html">Demonstration</a></li>
+                        <li><a href="./documentation.html">Documentation</a></li>
+                        <li><a href="./software_testing.html">Software Testing</a></li>
+                        <li><a href="./hardware_testing.html">Hardware Testing</a></li>
+                        <li><a href="./deployment.html">Cloud Deployment</a></li>
                         <li><a href="./team.html">Team</a></li>
-                        <li><a href="./future.html">Budget & Future Development</a></li>
                     </ul>
                 </div>
                 <div class='col-12 col-sm-8 col-md-5'>
                     <h5>Related Links</h5>
                     <ul class='list-unstyled'>
-                        <li><a href="http://www.ce.pdn.ac.lk/" target="_blank">Department of Computer Engineering</a></li>
+                        <li><a href="http://www.ce.pdn.ac.lk/" target="_blank">Department of Computer Engineering</a>
+                        </li>
                         <li><a href="http://eng.pdn.ac.lk/" target="_blank">Faculty of Engineering</a></li>
                         <li><a href="http://www.pdn.ac.lk/" target="_blank">Univerity of Peradeniya</a></li>
                     </ul>
                 </div>
                 <div class='col-12 col-md-3'>
                     <div class='text-center'>
-                        <a class="btn btn-social-icon btn-github btn-lg" href="https://github.com/cepdnaclk/e16-3yp-waiterbot-system" target="_blank"><i class="fa fa-github fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-github btn-lg"
+                            href="https://github.com/cepdnaclk/e16-3yp-waiterbot-system" target="_blank"><i
+                                class="fa fa-github fa-lg"></i></a>
                     </div>
                 </div>
-           </div>
-           <div class='row justify-content-center'>             
+            </div>
+            <div class='row justify-content-center'>
                 <div class='col-auto'>
                     <p>© Copyright 2020 WaiterBot System</p>
                 </div>
-           </div>
+            </div>
         </div>
     </footer>
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

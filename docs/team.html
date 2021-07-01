@@ -8,11 +8,12 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/6389eb7071.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css">
     <link rel='stylesheet' href='css/styles.css'>
-    
+
     <title>WaiterBot System</title>
 </head>
 
@@ -22,18 +23,71 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand mr-auto" href="./index.html"><img src="img/logo.png" height="30" width="41"></a>
+            <a class="navbar-brand mr-auto" href="./index.html">WaiterBot System</a>
             <div id="Navbar" class="collapse navbar-collapse">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./solution.html"><span class="fa fa-lightbulb-o fa-lg"></span> Solution Architecture</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./design.html"><span class="fa fa-pencil fa-lg"></span> Design and Progress</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./testingAndDeployment.html"><span class="fa fa-vial fa-lg"></span> Testing and Deployment</a></li>
-                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-user fa-lg"></span> Team</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./future.html"><span class="fa fa-money fa-lg"></span> Budget & Future Developments</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span>
+                            Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./solution.html"><span
+                                class="fa fa-lightbulb-o fa-lg"></span> Solution Architecture</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"><span class="fa fa-pencil fa-lg"></span> Design
+                            and Progress</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./waiterbot.html"><span class="fa fa-robot fa-lg"></span>
+                                WaiterBot</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./waiterbot_api.html"><span
+                                    class="fa fa-server fa-lg"></span> WaiterBot API</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./mobile_app.html"><span class="fa fa-mobile fa-lg"></span>
+                                Mobile Application</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./web_app.html"><span class="fa fa-desktop fa-lg"> </span>
+                                Web Application</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./desktop_app.html"><span class="fa fa-desktop fa-lg"></span>
+                                Desktop Application</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./demonstration.html"><span class="fa fa-play fa-lg"></span>
+                                Demonstrations</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./documentation.html"><span class="fa fa-file fa-lg"></span>
+                                Documentation</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"><span class="fa fa-vial fa-lg"></span> Testing
+                            and Deployment</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./software_testing.html"><span
+                                    class="fa fa-bug fa-lg"></span> Software Testing</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./hardware_testing.html"><span
+                                    class="fa fa-microchip fa-lg"></span> Hardware Testing</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./deployment.html"><span class="fa fa-cloud fa-lg"></span>
+                                Cloud Deployment</a>
+                        </div>
+
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"><span class="fa fa-plus fa-lg"></span> More</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item active" href="#"><span class="fa fa-users fa-lg"></span> Team</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./budget.html"><span class="fa fa-money fa-lg"></span>
+                                Budget</a>
+                        </div>
+                    </li>
                 </ul>
+                <a href="https://github.com/cepdnaclk/e16-3yp-waiterbot-system" class="btn btn-warning btn-md"
+                    role="button" target="_blank"><span class="fa fa-github fa-lg"></span> Github Repo</a>
             </div>
-            
+
         </div>
     </nav>
 
@@ -44,31 +98,18 @@
                     <h1>WaiterBot System</h1>
                     <p>Dine with Technology!</p>
                 </div>
-                <div class="col-12 col-sm align-self-center">
-                    <a href="https://github.com/cepdnaclk/e16-3yp-waiterbot-system" class="btn btn-warning btn-lg btn-block" role="button" target="_blank">Go to Github Repo</a>
-                </div>
             </div>
         </div>
     </header>
 
     <div class="container">
-        <div class="row">
-            <ol class="col-12 breadcrumb">
-                <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-                <li class="breadcrumb-item active">Team</a></li>
-            </ol>
-            <div class="col-12">
-               <h3>Team</h3>
-               <hr>
-            </div>
-        </div>
         <div class="row row-content">
             <div class="col-12">
                 <h4>Group Members</h4>
             </div>
             <div class="col-12 col-md-4">
                 <div class="card">
-                    <img src="img/shirly.png" class="img-fluid align-self-center" width="200">
+                    <img src="img/team/shirly.png" class="img-fluid align-self-center" width="200">
                     <h3 class="card-header bg-primary text-white text-center">Shirly Ekanayake</h3>
                     <div class="card-body">
                         <dl class="row">
@@ -80,7 +121,7 @@
             </div>
             <div class="col-12 col-md-4">
                 <div class="card">
-                    <img src="img/buddhi.png" class="img-fluid align-self-center" width="200">
+                    <img src="img/team/buddhi.png" class="img-fluid align-self-center" width="200">
                     <h3 class="card-header bg-primary text-white text-center">Buddhi Perera</h3>
                     <div class="card-body">
                         <dl class="row">
@@ -92,7 +133,7 @@
             </div>
             <div class="col-12 col-md-4">
                 <div class="card">
-                    <img src="img/kavindu.png" class="img-fluid align-self-center" width="200">
+                    <img src="img/team/kavindu.png" class="img-fluid align-self-center" width="200">
                     <h3 class="card-header bg-primary text-white text-center">Kavindu Chamith</h3>
                     <div class="card-body">
                         <dl class="row">
@@ -110,8 +151,7 @@
             </div>
             <div class="col-12 col-md-6">
                 <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail" width="150"
-                            src="img/isuru_sir.png">
+                    <img class="d-flex mr-3 img-thumbnail" width="150" src="img/team/isuru_sir.png">
                     <div class="media-body align-self-center">
                         <h5 class="mt-0">Dr.Isuru Nawinne</h5>
                     </div>
@@ -119,17 +159,15 @@
             </div>
             <div class="col-12 col-md-6">
                 <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail" width="150"
-                            src="img/ziyan_sir.png">
+                    <img class="d-flex mr-3 img-thumbnail" width="150" src="img/team/ziyan_sir.png">
                     <div class="media-body align-self-center">
-                        <h5 class="mt-0">Mr.Ziyan Marikkar</h5>
+                        <h5 class="mt-0">Mr.Ziyan Maraikar</h5>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-6">
                 <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail" width="150"
-                            src="img/upul_sir.png">
+                    <img class="d-flex mr-3 img-thumbnail" width="150" src="img/team/upul_sir.png">
                     <div class="media-body align-self-center">
                         <h5 class="mt-0">Dr.Upul Jayasinghe</h5>
                     </div>
@@ -142,44 +180,56 @@
     <!-- footer -->
     <footer class='footer'>
         <div class='container'>
-            <div class='row align-items-center'>             
+            <div class='row align-items-center'>
                 <div class='col-12 col-sm-4'>
                     <h5>Links</h5>
                     <ul class='list-unstyled'>
                         <li><a href="./index.html">Home</a></li>
                         <li><a href="./solution.html">Solution Architecture</a></li>
-                        <li><a href="./design.html">Design and Progress</a></li>
-                        <li><a href="./testingAndDeployment.html">Testing and Deployment</a></li>
+                        <li><a href="./waiterbot.html">WaiterBot</a></li>
+                        <li><a href="./waiterbot_api.html">WaiterBot API</a></li>
+                        <li><a href="./mobile_app.html">Mobile Application</a></li>
+                        <li><a href="./web_app.html">Web Application</a></li>
+                        <li><a href="./desktop_app.html">Desktop Application</a></li>
+                        <li><a href="./demonstration.html">Demonstration</a></li>
+                        <li><a href="./documentation.html">Documentation</a></li>
+                        <li><a href="./software_testing.html">Software Testing</a></li>
+                        <li><a href="./hardware_testing.html">Hardware Testing</a></li>
+                        <li><a href="./deployment.html">Cloud Deployment</a></li>
                         <li><a href="#">Team</a></li>
-                        <li><a href="./future.html">Budget & Future Development</a></li>
                     </ul>
                 </div>
                 <div class='col-12 col-sm-8 col-md-5'>
                     <h5>Related Links</h5>
                     <ul class='list-unstyled'>
-                        <li><a href="http://www.ce.pdn.ac.lk/" target="_blank">Department of Computer Engineering</a></li>
+                        <li><a href="http://www.ce.pdn.ac.lk/" target="_blank">Department of Computer Engineering</a>
+                        </li>
                         <li><a href="http://eng.pdn.ac.lk/" target="_blank">Faculty of Engineering</a></li>
                         <li><a href="http://www.pdn.ac.lk/" target="_blank">Univerity of Peradeniya</a></li>
                     </ul>
                 </div>
                 <div class='col-12 col-md-3'>
                     <div class='text-center'>
-                        <a class="btn btn-social-icon btn-github btn-lg" href="https://github.com/cepdnaclk/e16-3yp-waiterbot-system" target="_blank"><i class="fa fa-github"></i></a>
+                        <a class="btn btn-social-icon btn-github btn-lg"
+                            href="https://github.com/cepdnaclk/e16-3yp-waiterbot-system" target="_blank"><i
+                                class="fa fa-github"></i></a>
                     </div>
                 </div>
-           </div>
-           <div class='row justify-content-center'>             
+            </div>
+            <div class='row justify-content-center'>
                 <div class='col-auto'>
                     <p>© Copyright 2020 WaiterBot System</p>
                 </div>
-           </div>
+            </div>
         </div>
     </footer>
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/6389eb7071.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css">
+    <link rel='stylesheet' href='css/styles.css'>
+
+    <title>WaiterBot System</title>
+</head>
+
+
+<body>
+
+
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand mr-auto" href="./index.html">WaiterBot System</a>
+            <div id="Navbar" class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span>
+                            Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./solution.html"><span
+                                class="fa fa-lightbulb-o fa-lg"></span> Solution Architecture</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span
+                                class="fa fa-pencil fa-lg"></span> Design and Progress</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item active" href="#"><span class="fa fa-robot fa-lg"></span>
+                                WaiterBot</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./waiterbot_api.html"><span
+                                    class="fa fa-server fa-lg"></span> WaiterBot API</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./mobile_app.html"><span class="fa fa-mobile fa-lg"></span>
+                                Mobile Application</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./web_app.html"><span class="fa fa-desktop fa-lg"> </span>
+                                Web Application</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./desktop_app.html"><span class="fa fa-desktop fa-lg"></span>
+                                Desktop Application</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./demonstration.html"><span class="fa fa-play fa-lg"></span>
+                                Demonstrations</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./documentation.html"><span class="fa fa-file fa-lg"></span>
+                                Documentation</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"><span class="fa fa-vial fa-lg"></span> Testing
+                            and Deployment</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./software_testing.html"><span
+                                    class="fa fa-bug fa-lg"></span> Software Testing</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./hardware_testing.html"><span
+                                    class="fa fa-microchip fa-lg"></span> Hardware Testing</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./deployment.html"><span class="fa fa-cloud fa-lg"></span>
+                                Cloud Deployment</a>
+                        </div>
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"><span class="fa fa-plus fa-lg"></span> More</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./team.html"><span class="fa fa-users fa-lg"></span> Team</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./budget.html"><span class="fa fa-money fa-lg"></span>
+                                 Budget</a>
+                        </div>
+                    </li>
+                </ul>
+                <a href="https://github.com/cepdnaclk/e16-3yp-waiterbot-system" class="btn btn-warning btn-md"
+                    role="button" target="_blank"><span class="fa fa-github fa-lg"></span> Github Repo</a>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-sm-8">
+                    <h1>Design and Progress</h1>
+                    <p>WaiterBot</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class='container'>
+
+        <div class='row row-content'>
+            <div class='col'>
+                <p>WaiterBot is the main hardware component in our system. When a WaiterBot is deployed, the control
+                    unit will send a message to the WaiterBot consisting of the number of junctions and the turning
+                    direction. WaiterBot will reach the destination table by a line following mechanism and decides the
+                    correct path to the table by keeping track of the junctions in the path.</p>
+                <p>When the WaiterBot reaches the destination table, it will wait there untill the food items are taken
+                    away from its tray. Robot will ensure that all the food items are taken away from the tray by
+                    measuring the weight. When the delivery is complete the robot will return to the station and the
+                    robot can be deployed for another table.</p>
+                <p>If the robot is interfered by any obstrucle, the robot will stop its movement and inform the control
+                    unit and also if the food items on the tray are taken away from the tray before reaching the
+                    destination table, the robot will inform the control unit that the food items were taken away before
+                    reaching the destination table.</p>
+            </div>
+            <div class='col-md-7'>
+                <img src='./img/waiterbot/waiterbot_intro.png' class="img-fluid" />
+            </div>
+        </div>
+
+        <div class='row row-content'>
+            <div class="col">
+                <h3>WaiterBot Features</h3>
+            </div>
+            <div class='col'>
+                <ul>
+                    <li>WaiterBot is programmed in a way that the table layout and the path can be changed by the shop
+                        owner.</li>
+                    <li>Alerts on interupting the delivery and on taking the items off the tray before delivery.</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="6"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active  design-carousel">
+                <img src="./img//waiterbot/waiterbot_block_diagram.png" class="img-fluid" alt="...">
+                <div class="carousel-caption">
+                    <h5>Block Diagram</h5>
+                </div>
+            </div>
+            <div class="carousel-item  design-carousel">
+                <img src="./img//waiterbot/waiterbot_circuit.png" class="img-fluid" alt="...">
+                <div class="carousel-caption">
+                    <h5>Circuit Diagram</h5>
+                </div>
+            </div>
+            <div class="carousel-item  design-carousel">
+                <img src="./img//waiterbot/waiterbot_pcb.png" class="img-fluid" alt="...">
+                <div class="carousel-caption">
+                    <h5>PCB Design</h5>
+                </div>
+            </div>
+            <div class="carousel-item  design-carousel">
+                <img src="./img//waiterbot/waiterbot_pcb_with_component.png" class="img-fluid" alt="...">
+                <div class="carousel-caption">
+                    <h5>Fabricated PCB using chemical etching</h5>
+                </div>
+            </div>
+            <div class="carousel-item  design-carousel">
+                <img src="./img//waiterbot/waiterbot_pcb_bottom.png" class="img-fluid" alt="...">
+                <div class="carousel-caption">
+                    <h5>Fabricated PCB using chemical etching</h5>
+                </div>
+            </div>
+            <div class="carousel-item  design-carousel">
+                <img src="./img//waiterbot/robot_overall.png" class="img-fluid" alt="...">
+                <img src="./img//waiterbot/robot_front.png" class="img-fluid" alt="...">
+                <img src="./img//waiterbot/robot_frame.png"" class=" img-fluid" alt=" ...">
+                <div class="carousel-caption">
+                    <h5>CAD Designs</h5>
+                </div>
+            </div>
+            <div class="carousel-item design-carousel">
+                <img src="./img//waiterbot/robot_elec.png" class="img-fluid" alt="...">
+                <img src="./img//waiterbot/robot_open.png" class="img-fluid" alt="...">
+                <img src="./img//waiterbot/robot_side.png" class="img-fluid" alt="...">
+                <div class="carousel-caption">
+                    <h5>CAD Designs</h5>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+    <div class='container'>
+
+        <!-- Communication Protocols -->
+        <div class='row row-content'>
+            <div class='col'>
+                <h3>Communication and Protocols</h3>
+                <p>Deploying of the WaiterBots are done by the desktop application. When the desktop application is
+                    launched, it will start an MQTT broker and then the WaiterBots will connect to the broker and
+                    subscribe the topic assigned for the specific robot.</p>
+            </div>
+            <div class='col-md-7'>
+                <img src='./img/waiterbot/waiterbot_communication.png' class="img-fluid" />
+            </div>
+        </div>
+
+        <!-- Line Following Mechanism -->
+        <div class='row row-content'>
+            <div class='col-md-7'>
+                <img src='./img/waiterbot/error_detection.png' class="img-fluid" />
+            </div>
+            <div class='col'>
+                <h3>Line Following Mechanism</h3>
+                <p>WaiterBot will detect the path by using the readings from the IR sensor array with 7 sensors.
+                    Depending on the sensor readings, an error value will be calculated.</p>
+                <p>Using the propotionality control, the speed of the stepper motors will be controlled depending on the
+                    error vallue. That is by changing the frequency of the pulses sent to the stepper motors. To further
+                    smoothen the following of the line, PID controls will be used.</p>
+            </div>
+        </div>
+
+        <!-- Hardware Components -->
+        <div class="row row-content">
+            <div class="col">
+                <h3>Hardware Components</h3>
+                <div class="accordion" id="hardware-accordion">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Micro Controller
+                                </button>
+                            </h2>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#hardware-accordion">
+                            <div class="card-body row">
+                                <div class="col-7">
+                                    <h4>ESP32</h4>
+                                    <ul>
+                                        <li>Quantity - 1</li>
+                                        <li>Specifications and Operating Conditions
+                                            <ul>
+                                                <li>Oscillator Frequency - 40MHz</li>
+                                                <li>34 programmable GPIOs</li>
+                                                <li>SRAM - 512kB</li>
+                                                <li>Inbuilt Modules - Wifi, Bluetooth</li>
+                                                <li>Operating voltage - 3V-3.6V</li>
+                                                <li>Average current required - 80mA</li>
+                                            </ul>
+                                        </li>
+                                        <li>Limitations
+                                            <ul>
+                                                <li>When wifi is enabled, ADC fucntion of some interfaces will not work
+                                                    properly. To overcome this we are using these interfaces to get
+                                                    digital input when wifi is enabled.</li>
+                                            </ul>
+                                        </li>
+                                        <li>Why use ESP32?
+                                            <ul>
+                                                <li>Has an inbuilt wifi module</li>
+                                                <li>Has required ammount of GPIOs</li>
+                                                <li>Less power consumed and batteries will last long</li>
+                                                <li>High performance due to faster clock and large memory</li>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <img src="./img/waiterbot/esp32.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    Obstacle Avoidance
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                            data-parent="#hardware-accordion">
+                            <div class="card-body row">
+                                <div class="col-7">
+                                    <h4>HC-SR04</h4>
+                                    <ul>
+                                        <li>Quantity - 2</li>
+                                        <li>Uses the principle of reflection of sound to detect an obstracle.</li>
+                                        <li>No of sensors used - 2</li>
+                                        <li>Specifications and Operating Conditions
+                                            <ul>
+                                                <li>Operating voltage - 5V</li>
+                                                <li>Average current required - 15mA</li>
+                                                <li>Range - 2cm-400cm</li>
+                                                <li>Effective Angle - 15 degrees</li>
+                                            </ul>
+                                        </li>
+                                        <li>Limitations
+                                            <ul>
+                                                <li>Distance measurement is less accurate when compared to other
+                                                    distance sensor modules(IR sensors)</li>
+                                                <li>Detection angle is 15 degrees. To overcome this we are using 2
+                                                    sensor modules to cover the entire range.</li>
+                                            </ul>
+                                        </li>
+                                        <li>Why use HCSR04?
+                                            <ul>
+                                                <li>We use this module to detect obstrucles and not to measure the
+                                                    distance to the obstrucle. Therefore accuracy not much of a concern
+                                                    when it comes to detecting obstrucles.</li>
+                                                <li>Dust, light and mist does not effect the reading of the sensor</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <img src="./img/waiterbot/hcsr04.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    Line Following
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            data-parent="#hardware-accordion">
+                            <div class="card-body row">
+                                <div class="col-7">
+                                    <h4>IR Sensors</h4>
+                                    <ul>
+                                        <li>Quantity - 7</li>
+                                        <li>Uses the principle of reflection of IR light.</li>
+                                        <li>Specifications and Operating Conditions
+                                            <ul>
+                                                <li>Operating voltage - 5V</li>
+                                                <li>Average current required - 40mA</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <img src="./img/waiterbot/IRsensor.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                                    aria-controls="collapseFour">
+                                    Food Item Detection
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                            data-parent="#hardware-accordion">
+                            <div class="card-body row">
+                                <div class="col-7">
+                                    <h4>Load Cell - 5kg</h4>
+                                    <ul>
+                                        <li>Quantity - 1</li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <img src="./img/waiterbot/loadcell.png" alt="">
+                                </div>
+                            </div>
+                            <div class="card-body row">
+                                <div class="col-7">
+                                    <h4>HX711 module</h4>
+                                    <ul>
+                                        <li>Load cell outputs a voltage of micro volts. This module is used to amplify
+                                            the voltage.</li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <img src="./img/waiterbot/hx711.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingFive">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
+                                    aria-controls="collapseFive">
+                                    Drive Train
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                            data-parent="#hardware-accordion">
+                            <div class="card-body row">
+                                <div class="col-7">
+                                    <h4>Stepper Motors - 17HS4401</h4>
+                                    <ul>
+                                        <li>No of motors used - 4</li>
+                                        <li>Specifications and Operating Conditions
+                                            <ul>
+                                                <li>Operating voltage - 12V</li>
+                                                <li>Rated current - 1.7A</li>
+                                                <li>Step angle - 1.2</li>
+                                                <li>Steps per rotation -200</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <img src="./img/waiterbot/stepper_motor.png" alt="">
+                                </div>
+                            </div>
+                            <div class="card-body row">
+                                <div class="col-7">
+                                    <h4>DRV8825 Stepper Motor Driver</h4>
+                                    <ul>
+                                        <li>No of modules used - 4</li>
+                                        <li>Used to control the stepper motors</li>
+                                        <li>Micro contoller will send pluses and motor controller will rotate 1 step
+                                            angle per pulse</li>
+                                        <li>Speed of the rotation is determined by the frequency of the pulses</li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <img src="./img/waiterbot/dvr8825.png" alt="">
+                                </div>
+                            </div>
+                            <div class="card-body row">
+                                <div class="col-7">
+                                    <h4>Wheels</h4>
+                                    <ul>
+                                        <li>Diameter - 6.5cm</li>
+                                        <li>Can be coupled to the motors using hexagonal coupling</li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <img src="./img/waiterbot/wheels.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingSix">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapseSix" aria-expanded="false"
+                                    aria-controls="collapseSix">
+                                    Power
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
+                            data-parent="#hardware-accordion">
+                            <div class="card-body row">
+                                <div class="col-7">
+                                    <h4>Lithium-ion Battery - 18650</h4>
+                                    <ul>
+                                        <li>Quantity - 6</li>
+                                        <li>Two voltage levels are required
+                                            <ul>
+                                                <li>5V for the sensors and micro controller</li>
+                                                <li>12V for the motors</li>
+                                            </ul>
+                                        </li>
+                                        <li>Why lithium ion?
+                                            <ul>
+                                                <li>Less expensive</li>
+                                                <li>Can provide a high discharge current</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <img src="./img/waiterbot/battery.png" alt="">
+                                </div>
+                            </div>
+                            <div class="card-body row">
+                                <div class="col-7">
+                                    <h4>Buck Converter - LM2596</h4>
+                                    asdad
+                                </div>
+                                <div class="col">
+                                    <img src="./img/waiterbot/buck_converter.png" alt="">
+                                </div>
+                            </div>
+                            <div class="card-body row">
+                                <div class="col-7">
+                                    <h4>Charger Protection Board - 3s 20A</h4>
+                                    <ul>
+                                        <li>For safely charging and discharging the battery pack</li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <img src="./img/waiterbot/charger.png" alt="">
+                                </div>
+                            </div>
+                            <div class="card-body row">
+                                <div class="col-7">
+                                    <h4>DC charger - 12.6V</h4>
+                                    <ul>
+                                        <li>For recharging the battery packs</li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <img src="./img/waiterbot/dc_charger.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingSeven">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false"
+                                    aria-controls="collapseSeven">
+                                    Other
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
+                            data-parent="#hardware-accordion">
+                            <div class="card-body row">
+                                <div class="col-7">
+                                    <h4>LCD Display 16x02</h4>
+                                </div>
+                                <div class="col">
+                                    <img src="./img/waiterbot/lcd.png" alt="">
+                                </div>
+                            </div>
+                            <div class="card-body row">
+                                <div class="col-7">
+                                    <h4>Logic Level Converter</h4>
+                                    <p>ESP32 operates at 3.3V and sensors operate at 5V. So when sending signals between
+                                        the micro controllers and the sensors it is required to match the operating
+                                        voltages. If not the devices will get damaged.</p>
+                                </div>
+                                <div class="col">
+                                    <img src="./img/waiterbot/level_converter.png" alt="">
+                                </div>
+                            </div>
+                            <div class="card-body row">
+                                <div class="col-7">
+                                    <h4>Resistors</h4>
+                                    <p>33k and 10k resistors are required for measuring the battery percentage.</p>
+
+                                </div>
+                                <div class="col">
+                                    <img src="./img/waiterbot/resistor.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+
+    <!-- footer -->
+    <footer class='footer'>
+        <div class='container'>
+            <div class='row align-items-center'>
+                <div class='col-12 col-sm-4'>
+                    <h5>Links</h5>
+                    <ul class='list-unstyled'>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./solution.html">Solution Architecture</a></li>
+                        <li><a href="#">WaiterBot</a></li>
+                        <li><a href="./waiterbot_api.html">WaiterBot API</a></li>
+                        <li><a href="./mobile_app.html">Mobile Application</a></li>
+                        <li><a href="./web_app.html">Web Application</a></li>
+                        <li><a href="./desktop_app.html">Desktop Application</a></li>
+                        <li><a href="./demonstration.html">Demonstration</a></li>
+                        <li><a href="./documentation.html">Documentation</a></li>
+                        <li><a href="./software_testing.html">Software Testing</a></li>
+                        <li><a href="./hardware_testing.html">Hardware Testing</a></li>
+                        <li><a href="./deployment.html">Cloud Deployment</a></li>
+                        <li><a href="./team.html">Team</a></li>
+                    </ul>
+                </div>
+                <div class='col-12 col-sm-8 col-md-5'>
+                    <h5>Related Links</h5>
+                    <ul class='list-unstyled'>
+                        <li><a href="http://www.ce.pdn.ac.lk/" target="_blank">Department of Computer Engineering</a>
+                        </li>
+                        <li><a href="http://eng.pdn.ac.lk/" target="_blank">Faculty of Engineering</a></li>
+                        <li><a href="http://www.pdn.ac.lk/" target="_blank">Univerity of Peradeniya</a></li>
+                    </ul>
+                </div>
+                <div class='col-12 col-md-3'>
+                    <div class='text-center'>
+                        <a class="btn btn-social-icon btn-github btn-lg"
+                            href="https://github.com/cepdnaclk/e16-3yp-waiterbot-system" target="_blank"><i
+                                class="fa fa-github fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class='row justify-content-center'>
+                <div class='col-auto'>
+                    <p>© Copyright 2020 WaiterBot System</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
